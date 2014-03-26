@@ -125,14 +125,14 @@ public class HandsetFragment extends Fragment {
 							mDescription1.setVisibility(View.INVISIBLE);
 							mLine1.setVisibility(View.INVISIBLE);
 						} else {
-							mDescription1.setVisibility(View.VISIBLE);
-							mLine1.setVisibility(View.VISIBLE);
+							mDescription1.setVisibility(View.INVISIBLE);
+							mLine1.setVisibility(View.INVISIBLE);
 						}
 						if (!mRtspServer.isEnabled()) {
 							mDescription2.setVisibility(View.INVISIBLE);
 							mLine2.setVisibility(View.INVISIBLE);
 						} else {
-							mDescription2.setVisibility(View.VISIBLE);
+							mDescription2.setVisibility(View.INVISIBLE);
 							mLine2.setVisibility(View.VISIBLE);
 						}
 						if (!mHttpServer.isStreaming() && !mRtspServer.isStreaming()) displayIpAddress();

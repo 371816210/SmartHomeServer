@@ -29,7 +29,7 @@
             android:layout_marginLeft="18dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/imageView1"
-            android:text="Spydroid"
+            android:text="SmartHomeServer"
             android:textColor="@android:color/white"
             android:textSize="19sp" />
 
@@ -42,13 +42,13 @@
             android:textSize="18sp" />
     </RelativeLayout>
 
-    <TextView
+   <!--   <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
         android:text="@string/description"
-        android:textSize="17sp" />
+        android:textSize="17sp" />-->
 
     <FrameLayout
         android:layout_width="match_parent"

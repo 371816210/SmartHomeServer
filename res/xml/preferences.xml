@@ -44,34 +44,19 @@
             android:key="video_bitrate"
             android:title="@string/settings13" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/settings19" >
+   <!--    <PreferenceCategory android:title="@string/settings19" >
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="http_server_enabled"
             android:summary="@string/settings23"
             android:title="@string/settings22" />
-        <!--
-             <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="use_https"
-            android:summary="@string/settings25"
-            android:title="@string/settings24" />
-        -->
         <EditTextPreference
             android:defaultValue="8080"
             android:inputType="number"
             android:key="http_port"
             android:summary="@string/settings21"
             android:title="@string/settings20" />
-        <!--
-             <EditTextPreference
-            android:defaultValue="8443"
-            android:inputType="number"
-            android:key="https_port"
-            android:summary="@string/settings27"
-            android:title="@string/settings26" />
-        -->
-    </PreferenceCategory>
+    </PreferenceCategory>-->
     <PreferenceCategory android:title="@string/settings28" >
         <CheckBoxPreference
             android:defaultValue="false"
@@ -86,12 +71,12 @@
             android:summary="@string/settings32"
             android:title="@string/settings31" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/settings14" >
+  <!--   <PreferenceCategory android:title="@string/settings14" >
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="notification_enabled"
             android:summary="@string/settings16"
             android:title="@string/settings15" />
-    </PreferenceCategory>
+    </PreferenceCategory>  -->
 
 </PreferenceScreen>

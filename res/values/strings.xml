@@ -11,10 +11,10 @@
     <string name="warning">Turn on wifi or tethering !</string>
     <string name="streaming">Streaming !</string>
     <string name="bitrate">0 kbps</string>
-    <string name="notification_title">Spydroid</string>
-    <string name="notification_content">Beware ! Spydroid is running ;)</string>
+    <string name="notification_title">SmartHomeServer</string>
+    <string name="notification_content">Beware ! SmartHomeServer is running ;)</string>
     <string name="preview">Start a stream to enable the preview !</string>
-    <string name="about0">Spydroid is a fun and open source application !</string>
+    <string name="about0">SmartHomeServer is a fun and open source application !</string>
     <string name="about1">If you don\'t understand how to use it, the google page of the project contains a FAQ. For example, you will find explanations on how to play the stream in VLC</string>
     <string name="about2">Don\'t forget to rate the app, it\'s really important, your life depends on it !</string>
     <string name="about3">You might also like it on facebook, why not ? Come on, like it ! It will be our little secret</string>
@@ -48,7 +48,7 @@
     <string name="settings27">Port used by the HTTPS server</string>
     <string name="settings28">RTSP server</string>
     <string name="settings29">Enabled</string>
-    <string name="settings30">Useful to use Spydroid directly with VLC</string>
+    <string name="settings30"></string>
     <string name="settings31">RTSP server port</string>
     <string name="settings32">Port used by the RTSP server</string>
     <string name="bind_failed">You need to choose another port for the %s server !</string>

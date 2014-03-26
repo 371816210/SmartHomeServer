@@ -83,6 +83,7 @@ public class OptionsActivity extends PreferenceActivity {
 
 		audioEncoder.setEnabled(settings.getBoolean("stream_audio", false));
 
+		if (httpEnabled != null) { 
 		httpEnabled.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 			public boolean onPreferenceChange(Preference preference, Object newValue) {
 				boolean state = (Boolean)newValue;
@@ -108,7 +109,7 @@ public class OptionsActivity extends PreferenceActivity {
 				return true;
 			}
 		});
-
+		}
 		if (httpsEnabled != null) { 
 			httpsEnabled.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 				public boolean onPreferenceChange(Preference preference, Object newValue) {

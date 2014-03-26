@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.majorkernelpanic.spydroid"
     android:versionCode="910"
-    android:versionName="9.1" >
+    android:versionName="0.1" >
 
     <uses-sdk
         android:minSdkVersion="9"
