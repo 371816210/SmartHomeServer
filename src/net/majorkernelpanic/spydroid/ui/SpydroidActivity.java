@@ -115,7 +115,7 @@ public class SpydroidActivity extends FragmentActivity {
 
 		// Remove the ads if this is the donate version of the app.
 		if (mApplication.DONATE_VERSION) {
-			((LinearLayout)findViewById(R.id.adcontainer)).removeAllViews();
+			//((LinearLayout)findViewById(R.id.adcontainer)).removeAllViews();
 		}
 
 		// Prevents the phone from going to sleep mode
@@ -123,7 +123,7 @@ public class SpydroidActivity extends FragmentActivity {
 		mWakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK, "net.majorkernelpanic.spydroid.wakelock");
 
 		// Starts the service of the HTTP server
-		this.startService(new Intent(this,CustomHttpServer.class));
+		//this.startService(new Intent(this,CustomHttpServer.class));
 
 		// Starts the service of the RTSP server
 		this.startService(new Intent(this,CustomRtspServer.class));
@@ -350,12 +350,12 @@ public class SpydroidActivity extends FragmentActivity {
 				switch (i) {
 				case 0: return new HandsetFragment();
 				case 1: return new PreviewFragment();
-				case 2: return new AboutFragment();
+				case 2:// return new AboutFragment();
 				}
 			} else {
 				switch (i) {
 				case 0: return new TabletFragment();
-				case 1: return new AboutFragment();
+		        case 1:// return new AboutFragment();
 				}        		
 			}
 			return null;
@@ -363,7 +363,7 @@ public class SpydroidActivity extends FragmentActivity {
 
 		@Override
 		public int getCount() {
-			return device==HANDSET ? 3 : 2;
+			return device==HANDSET ? 2 : 1;
 		}
 
 		public HandsetFragment getHandsetFragment() {
@@ -388,12 +388,12 @@ public class SpydroidActivity extends FragmentActivity {
 				switch (position) {
 				case 0: return getString(R.string.page0);
 				case 1: return getString(R.string.page1);
-				case 2: return getString(R.string.page2);
+				case 2:// return getString(R.string.page2);
 				}        		
 			} else {
 				switch (position) {
 				case 0: return getString(R.string.page0);
-				case 1: return getString(R.string.page2);
+				case 1:// return getString(R.string.page2);
 				}
 			}
 			return null;
