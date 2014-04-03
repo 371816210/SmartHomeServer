@@ -179,9 +179,9 @@ public class HandsetFragment extends Fragment {
 	    	mLine1.setText(mHttpServer.isHttpsEnabled()?"https://":"http://");
 	    	mLine1.append(ip);
 	    	mLine1.append(":"+mHttpServer.getHttpPort());
-	    	mLine2.setText("rtsp://");
+	    	mLine2.setText("ip:");
 	    	mLine2.append(ip);
-	    	mLine2.append(":"+mRtspServer.getPort());
+	    	mLine2.append("      port:"+mRtspServer.getPort());
 	    	streamingState(0);
     	} else if((ipaddress = Utilities.getLocalIpAddress(true)) != null) {
     		mLine1.setText(mHttpServer.isHttpsEnabled()?"https://":"http://");
