@@ -56,7 +56,7 @@ public class SpydroidApplication extends android.app.Application {
 	public int audioEncoder = SessionBuilder.AUDIO_AMRNB;
 
 	/** By default H.263 is the video encoder. */
-	public int videoEncoder = SessionBuilder.VIDEO_H263;
+	public int videoEncoder = SessionBuilder.VIDEO_H264;
 
 	/** Set this flag to true to disable the ads. */
 	public final boolean DONATE_VERSION = false;
@@ -89,7 +89,7 @@ public class SpydroidApplication extends android.app.Application {
 		notificationEnabled = settings.getBoolean("notification_enabled", true);
 		
 		// On android 3.* AAC ADTS is not supported so we set the default encoder to AMR-NB, on android 4.* AAC is the default encoder
-		audioEncoder = (Integer.parseInt(android.os.Build.VERSION.SDK)<14) ? SessionBuilder.AUDIO_AMRNB : SessionBuilder.AUDIO_AAC;
+		audioEncoder = (Integer.parseInt(android.os.Build.VERSION.SDK)<14) ? SessionBuilder.AUDIO_AMRNB : SessionBuilder.AUDIO_AMRNB;
 		audioEncoder = Integer.parseInt(settings.getString("audio_encoder", String.valueOf(audioEncoder)));
 		videoEncoder = Integer.parseInt(settings.getString("video_encoder", String.valueOf(videoEncoder)));
 

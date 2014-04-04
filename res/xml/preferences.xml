@@ -3,7 +3,7 @@
 
     <PreferenceCategory android:title="@string/settings3" >
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="stream_audio"
             android:summary="@string/settings4"
             android:title="@string/settings3" />
@@ -59,7 +59,7 @@
     </PreferenceCategory>-->
     <PreferenceCategory android:title="@string/settings28" >
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="rtsp_enabled"
             android:summary="@string/settings30"
             android:title="@string/settings29" />
